@@ -2,7 +2,7 @@
   <head>
     <link rel="stylesheet" href="style.css">
     <meta charset="utf-8">
-    <title>yes horosconp</title>
+    <title>horoscope</title>
     <style>
       #sign{
         position: relative;
@@ -19,132 +19,130 @@
           //alert(day);
           var pic =""// ""<img src="" width = "" height = "">
           var fortune = ""
-          if(month = 1){
-            if(day >= 1 && day <= 19){
+          if(month == 1){
+            if(day < 20){
               capricorn();
             }
-            else if (day >= 20 && day <= 31){
+            else if (day > 19){
               aquarius();
             }
             else{
               error();
             }
           }
-          if(month = 2){
-            if(day >= 1 && day <= 18){
+          else if(month == 2){
+            if(day < 19){
               aquarius();
             }
-            else if (day >= 19 && day <= 29){
+            else if (day >18){
               pisces();
             }
             else{
               error();
             }
          }
-          if(month = 3){
-            if(day >= 1 && day <= 20){
+          else if(month == 3){
+            if(day < 21){
               pisces();
             }
-            else if (day >= 21 && day <= 31){
+            else if (day > 20){
               aries();
             }
             else{
               error();
             }
           }
-          if(month = 4){
-            if(day >= 1 && day <= 19){
+          else if(month == 4){
+            if(day < 20){
               aries();
             }
-            else if (day >= 20 && day <= 30){
+            else if (day > 19){
               taurus();
             }
             else{
               error();
             }
           }
-          if(month = 5){
-            if(day >= 1 && day <= 20){
+          else if(month == 5){
+            if(day < 21){
               taurus();
             }
-            else if (day >= 21 && day <= 31){
+            else if (day > 20){
               gemini();
             }
             else{
               error();
             }
           }
-          if(month = 6){
-            if (day >= 1 && day <= 20){
+          else if(month == 6){
+            if (day < 21){
               gemini();
             }
-            else if (day >= 20 && day <= 30){
+            else if (day > 20){
               cancer();
             }
             else{
               error();
             }
           }
-          if(month = 7){
-            if(day >= 1 && day <= 22){
+          else if(month == 7){
+            if(day < 23){
               cancer();
             }
-            else if (day >= 23 && day <= 31){
+            else if (day > 22){
               leo();
             }
             else{
               error();
             }
           }
-          if(month = 8){
-            if(day >= 1 && day <= 22){
+          else if(month == 8){
+            if(day < 23){
               leo();
             }
-            else if (day >= 23 && day <= 31){
+            else if (day > 22){
               virgo();
             }
             else{
               error();
             }
           }
-          if(month = 9){
-            if(day >= 1 && day <= 22){
+          else if(month == 9){
+            if(day < 23){
               virgo();
             }
-            else if (day >= 23 && day <= 30){
+            else if (day > 22){
               libra();
             }
-            else if (month < 1 || month > 12){
+            else{
               error();
             }
           }
-          if(month = 10){
-            if(day >= 1 && day <= 22){
+          else if(month == 10){
+            if(day < 23){
               libra();
             }
-            else if (day >= 23 && day <= 31){
+            else if (day > 22){
               scorpio();
             }
             else{
               error();
             }
           }
-          if(month = 11){
-            if(day >= 1 && day <= 21){
+          else if(month == 11){
+            if(day < 22){
               scorpio();
             }
-            else if (day >= 22 && day <= 30){
+            else if (day > 21){
               sagittarius();
             }
-            else{
-              error();
-            }
+
           }
-           if(month = 12){
-            if(day >= 1 && day <= 21){
+          else if(month == 12){
+            if(day <22){
               sagittarius();
             }
-            else if (day >= 22 && day <= 31){
+            else if (day > 21){
               capricorn();
             }
             else{
@@ -154,80 +152,106 @@
           else{
             error();
           }
-              function capricorn(){
-                var vSign = "Capricorn";
-                fortune = "Capricorn";
-                pic = "capricorn.webp";
-              }
-              function aquarius(){
-                var vSign = "Aquarius";
-                fortune = "Aquarius";
-                pic = "aquarius.webp";
-              }
-              function pisces(){
-                var vSign = "Pisces";
-                fortune = "Pisces";
-                pic = "pisces.webp";
-              }
-              function aries(){
-                var vSign = "Aries";
-                fortune = "Aries";
-                pic = "aries.webp";
-              }
-              function taurus(){
-                var vSign = "Taurus";
-                fortune = "Taurus";
-                pic = "taurus.webp";
-              }
-              function gemini(){
-                var vSign = "Gemini";
-                fortune = "Gemini";
-                pic = "gemini.webp";
-              }
-              function cancer(){
-                var vSign = "Cancer";
-                fortune = "Cancer";
-                pic = "cancer.webp";
-              }
-              function leo(){
-                var vSign = "Leo";
-                fortune = "As a Leo, you got home from work last night at 10:30, and instead of doing your comp sci homework, you played on your phone like an idiot. Good job, now you're doing homework at 1 AM. Your fortune is that you're gonna be really tired";
-                pic = "leo.webp";
-              }
-              function virgo(){
-                var vSign = "Virgo";
-                fortune = "Virgo";
-                pic = "virgo.webp";
-              }
-              function libra(){
-                var vSign = "Libra";
-                fortune = "Libra";
-                pic = "libra.webp";
-              }
-              function scorpio(){
-                var vSign = "Scorpio";
-                fortune = "Scorpio";
-                pic = "scorpio.webp";
-              }
-              function sagittarius(){
-                var vSign = "Sagittarius";
-                fortune = "sagittarius";
-                pic = "sagittarius.webp";
-              }
-              function error(){
-                fortune = "How could you mess up doing a horoscope are you dumb like you literally just enter your birthday how hard could that be"
-                pic = "clown.jpg";
-              }
+
+
+        }
+        function capricorn(){
+          var vSign = "Capricorn";
+          var fortune = "You're a capricorn. Some stuff is probably gonna happen today.";
+          var pic = "capricorn.webp";
           document.getElementById('sign').innerHTML = "<img src = " + pic + " width = 300px height = 300px>"
           document.getElementById('fortune').innerHTML = fortune;
         }
+        function aquarius(){
+          var vSign = "Aquarius";
+          var fortune = "You are an aquarius, meaning you can breathe water. You won't drown today.";
+          var pic = "aquarius.webp";
+          document.getElementById('sign').innerHTML = "<img src = " + pic + " width = 300px height = 300px>"
+          document.getElementById('fortune').innerHTML = fortune;
+        }
+        function pisces(){
+          var vSign = "Pisces";
+          var fortune = "As a pisces, you will be offered some pie today, but turn it down bc pie sucks";
+          var pic = "pisces.webp";
+          document.getElementById('sign').innerHTML = "<img src = " + pic + " width = 300px height = 300px>"
+          document.getElementById('fortune').innerHTML = fortune;
+        }
+        function aries(){
+          var vSign = "Aries";
+          var fortune = "You're an Aries. That's kinda cool I guess, you might make some friends today.";
+          var pic = "aries.webp";
+          document.getElementById('sign').innerHTML = "<img src = " + pic + " width = 300px height = 300px>"
+          document.getElementById('fortune').innerHTML = fortune;
+        }
+        function taurus(){
+          var vSign = "Taurus";
+          var fortune = "As a taurus, you'll deal with a lot of BULL today. :)";
+          var pic = "taurus.webp";
+          document.getElementById('sign').innerHTML = "<img src = " + pic + " width = 300px height = 300px>"
+          document.getElementById('fortune').innerHTML = fortune;
+        }
+        function gemini(){
+          var vSign = "Gemini";
+          var fortune = "You'll find your long lost clone/twin, and be thrown into a spiral of despair because of it.";
+          var pic = "gemini.webp";
+          document.getElementById('sign').innerHTML = "<img src = " + pic + " width = 300px height = 300px>"
+          document.getElementById('fortune').innerHTML = fortune;
+        }
+        function cancer(){
+          var vSign = "Cancer";
+          var fortune = "You'll feel pretty crabby today";
+          var pic = "cancer.webp";
+          document.getElementById('sign').innerHTML = "<img src = " + pic + " width = 300px height = 300px>"
+          document.getElementById('fortune').innerHTML = fortune;
+        }
+        function leo(){
+          var vSign = "Leo";
+          var fortune = "You're a Leo which means you're better than everyone. You will get lots of praise today";
+          var pic = "leo.webp";
+          document.getElementById('sign').innerHTML = "<img src = " + pic + " width = 300px height = 300px>"
+          document.getElementById('fortune').innerHTML = fortune;
+        }
+        function virgo(){
+          var vSign = "Virgo";
+          var fortune = "No fortune for you bc virgos suck and I hate them";
+          var pic = "virgo.webp";
+          document.getElementById('sign').innerHTML = "<img src = " + pic + " width = 300px height = 300px>"
+          document.getElementById('fortune').innerHTML = fortune;
+        }
+        function libra(){
+          var vSign = "Libra";
+          var fortune = "As a libra, you will liberate your working-class brothers and rise up against the ";
+          var pic = "libra.webp";
+          document.getElementById('sign').innerHTML = "<img src = " + pic + " width = 300px height = 300px>"
+          document.getElementById('fortune').innerHTML = fortune;
+        }
+        function scorpio(){
+          var vSign = "Scorpio";
+          var fortune = "You may or may not get attacked by a scorpion today. What, do I look like a fortune-teller?";
+          var pic = "scorpio.webp";
+          document.getElementById('sign').innerHTML = "<img src = " + pic + " width = 300px height = 300px>"
+          document.getElementById('fortune').innerHTML = fortune;
+        }
+        function sagittarius(){
+          var vSign = "Sagittarius";
+          var fortune = "As a sagitartious, you will eventually learn how to pronounce your sign.";
+          var pic = "sagittarius.webp";
+          document.getElementById('sign').innerHTML = "<img src = " + pic + " width = 300px height = 300px>"
+          document.getElementById('fortune').innerHTML = fortune;
+        }
+        function error(){
+          var fortune = "Come on all you had to do was enter your birthday it's not hard"
+          var pic = "clown.jpg";
+          document.getElementById('sign').innerHTML = "<img src = " + pic + " width = 300px height = 300px>"
+          document.getElementById('fortune').innerHTML = fortune;
+        }
+
     </script>
   </head>
   <body>
     <input id="month" type="text" placeholder="Month"><br><hr><br>
     <input id="day" type="text" placeholder="Day"><br><hr><br>
     <input type="button" value="Calculate Horoscope" onclick="horo()"><br>
-
 <span id = "sign"></span><br>
 <span id = "fortune"></span>
   </body>
